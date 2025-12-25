@@ -1,0 +1,12 @@
+:root[data-theme="dark"]{
+    --color-page-primary: hsl(220, 6%, 10%);
+    --color-page-primary-shade: hsl(204, 7%, 14%);
+    --color-font-primary: hsl(0, 0%, 100%);
+    --color-font-primary-shade: hsl(212deg 7% 78%);
+}
+:root[data-theme="light"]{
+    --color-page-primary: hsl(0, 0%, 100%);
+    --color-page-primary-shade: hsl(0, 0%, 100%);
+    --color-font-primary: hsl(0, 0%, 0%);
+    --color-font-primary-shade: hsl(215, 7%, 34%);
+}

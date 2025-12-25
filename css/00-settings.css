@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --max-index: 100;
+    --height-header: 98px;
+    --max-side-padding: 100vw;
+    --layout-side-padding-min: 1rem;
+    --side-padding: max(var(--layout-side-padding-min), calc(50vw - 720px + 1rem));
+    --font-family-text: "Inter", sans-serif;
+    --user-menu-button-size: 17.5px;
+    --icon-header-height: 1.25rem;
+    --breadcrums-bar-height: 32px;
+    --time-classic-anim: .175s;
+    --classic-anim: margin .175s ease-in,
+                color .175s ease-in,
+                transform .175s ease-in,
+                background-color .175s ease-in;
+    --layout-main:
+    [pad-start] var(--side-padding)
+    [full-start] 1fr
+    [content-start] minmax(0,48rem)
+    [content-end] 1fr
+    [full-end] var(--side-padding)
+    [pad-end];
+    --header-pad: 98px;
+    --font-weight-regular: 400;
+    --max-homepage-header-height: calc(1rem * 21);
+    --min-homepage-header-height: calc(1rem * 27);
+    --font-line-normal: 1.5rem;
+    --font-line-largest: 3.8rem;
+    --font-size-small: .8rem;
+    --font-size-normal: 1rem;
+    --font-size-largest: 2.5rem;
+}

@@ -1,0 +1,111 @@
+.page-layout__main {
+    background-color: var(--color-main-layout-dark-20);
+}
+.homepage-header {
+    display: grid;
+    grid-template-columns: var(--layout-main);
+    height: var(--max-homepage-header-height);
+}
+
+.homepage-header__center {
+    display: grid;
+    grid-column: content-start / pad-end;
+    grid-template-areas:
+        "copy   mandala" 
+        "search mandala";  
+    height: inherit;
+    /* text-wrap: nowrap; */
+}
+@media(810px > width){
+    .homepage-header{
+        height: var(--min-homepage-header-height);
+    }
+}
+.homepage-header__copy{ 
+    grid-area: copy; 
+    height: 70%;
+} 
+.homepage-header__search{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: nowrap;
+    grid-area: search; 
+    height: 70%;
+} 
+.homepage-header__mandala{ 
+    grid-area: mandala; 
+    height: inherit;
+} 
+.homepage-header__search-custom{
+    --search-wt: 370px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 78.4px; 
+    width: var(--search-wt);
+} 
+.homepage-header-button__search{
+    position: relative;
+    height: inherit; 
+    width: 158px;
+    border-radius: 999px;
+    border: 2px solid var(--color-border-primary);
+    font-size: 26px;
+    font-weight: 300;
+    
+    background: transparent; 
+    color: var(--color-white);
+} 
+.homepage-header-button__search::before{
+    content: ""; 
+    position: relative;
+    display: inline-block;
+    -webkit-mask-image: url(../assets/search.svg);
+    mask-image: url(../assets/search.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    width: calc(var(--icon-header-height) * 1.2); 
+    height: calc(var(--icon-header-height) * 1.2); 
+    top: 5%;
+    background-color: currentColor; 
+}
+/* homepage source text */ 
+.homepage-header__copy{
+    display: flex; 
+    justify-content: center; 
+    font-size: 1.5rem; 
+    font-family: var(--font-family-text);
+} 
+.homepage-header__copy section h1{
+    font-size: var(--font-size-largest);
+    font-weight: 400;
+    line-height: var(--font-line-largest);
+} 
+.homepage-header__copy section h1::after{
+    content: " _";
+    color: var(--color-blue-80);
+}
+.homepage-header__copy section p{
+    font-weight: 300; 
+    line-height: 1.5;
+} 
+.homepage-header__copy section p a{
+    color: var(--color-blue-80);
+}
+.homepage-header__copy section p a:hover{
+    text-decoration: none;
+}
+.homepage-header__mandala{
+    overflow: hidden;
+    color: var(--color-border-primary);
+} 
+.mandala{
+    position: relative;
+    display: block;
+    --heigth: 44rem;
+    margin-top: calc(var(--heigth)*-1.3/4);
+    margin-left: auto;
+    height: var(--heigth);
+    transform: translateX(-10%);
+}

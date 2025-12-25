@@ -1,0 +1,19 @@
+<svg viewBox="0 0 675 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="circle1" d="M337.5,337.5 m-320,0 a320,320 0 1,1 640,0 a320,320 0 1,1 -640,0"/>
+  </defs>
+
+  <text dy="70">
+    <textPath href="#circle1">
+      <tspan>/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+      <tspan dx="20">/</tspan>
+    </textPath>
+  </text>
+</svg>

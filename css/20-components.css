@@ -1,0 +1,19 @@
+.external{
+    color: inherit;
+    text-decoration: none;
+}
+.external::after{
+    background-color: currentColor;
+    content: "\200b"/" (external)";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-left: .25em;
+    vertical-align: text-top;
+    mask-size: cover;
+    -webkit-mask-image: url(../assets/golink.svg);
+    mask-image: url(../assets/golink.svg);
+}
+.external:hover{
+    text-decoration: underline;
+}

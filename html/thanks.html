@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for Watching!</title>
+    <link rel="stylesheet" href="../css/color.css">
+</head>
+
+<body style="overflow: hidden; text-wrap: nowrap; background-color: hsl(220, 6%, 10%); height: 100vh;">
+    <div
+        style="display: flex; width: 100%; height: 100%; justify-content: center; place-items: center; font-size: xx-large; color: #fff;">
+        <p>This site is copy Mozilla Wiki</p>
+
+        <p style="display: block; padding-top: 5rem; color: var(--color-blue-80);">thanks for watching!</p>
+
+        <button type="button">
+            <a href="../html/index.html"></a>
+            <span>Back to Mozzila site</span>
+        </button>
+    </div>
+    <style>
+        div > p:nth-child(2)::after {
+            content: "By Dokf294";
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            font-size: 5rem;
+            color: var(--color-blue-60);
+            transform: translateX(-50%);
+        }
+        button{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            border-radius: .7rem;
+            background-color: transparent;
+            border: none;
+            transform: translate(-50%, -50%);
+            height: 60px;
+        }
+
+        button:hover{
+            background-color: rgba(0, 0, 0, .1);
+        }
+        button a{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+        button span {
+            color: #fff;
+            font-size: 2rem;
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</body>
+
+</html>

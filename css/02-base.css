@@ -1,0 +1,8 @@
+.page-layout {
+    display: grid;
+    
+    min-height: 100vh;
+   
+    font-feature-settings: "zero";
+    overflow-x: hidden;
+}  

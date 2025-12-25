@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-render="Homepage" data-nop="yes">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" src="../js/theme.js"></script>
+    <script type="module" src="../js/swifter.js"></script>
+    <script src="../js/href.js"></script>
+
+    <title>MDN Web docs</title>
+</head>
+
+<body class="page-layout">
+    <header class="page-layout__header">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a href="#" class="logo">
+                    <svg class="logo_svg" width="83" height="24" viewBox="0 0 83 24" role="img" fill="currentColor">
+                        <title>MDN</title>
+                        <path class="logo__letter"
+                            d="M9.4 0 2.81 21.17H.12L6.69 0H9.4Zm2.38 0v21.17H9.4V0h2.4Zm9.27 0-6.56 21.17H11.8L18.36 0h2.69Zm2.39 0v21.17h-2.4V0h2.4Z">
+                        </path>
+                        <path class="logo__text"
+                            d="M45.55 16.83h-3.93v-1.27h.87v-3.63c0-.85-.16-1.45-.48-1.82a1.65 1.65 0 0 0-1.3-.52c-.74 0-1.3.25-1.66.78a2.98 2.98 0 0 0-.58 1.58v3.59h1.38v1.26h-3.93v-1.26h.87v-3.6c0-.88-.16-1.48-.48-1.83a1.7 1.7 0 0 0-1.29-.52 1.93 1.93 0 0 0-1.65.75 2.85 2.85 0 0 0-.58 1.6v3.62h1.59v1.27h-4.64v-1.27h1.37V9.75h-1.4V8.46h3.08v1.47c.28-.48.62-.87 1.08-1.2a3 3 0 0 1 1.68-.45c.67 0 1.22.16 1.73.48.5.32.85.8 1.03 1.47.25-.57.62-1.03 1.13-1.4.5-.37 1.1-.55 1.81-.55.8 0 1.5.25 2.05.75.55.51.85 1.3.85 2.35v4.18h1.4v1.27Zm9.77 0H52.3v-1.66c-.27.51-.66.95-1.13 1.29-.56.4-1.23.59-1.9.55-1.11 0-2-.37-2.67-1.12a4.41 4.41 0 0 1-1-3.06c0-1.15.3-2.2.93-3.15.6-.94 1.58-1.43 2.94-1.43 1.36 0 2.25.5 2.83 1.5V5.22h-2V3.93h3.63v11.63h1.38v1.27Zm-3.06-3.86v-1.02a2.28 2.28 0 0 0-.73-1.67 2.4 2.4 0 0 0-1.66-.65 2.18 2.18 0 0 0-1.88.9 3.63 3.63 0 0 0-.65 2.2c0 .95.23 1.68.7 2.19.45.5 1.03.76 1.7.76.73 0 1.33-.3 1.79-.88.48-.6.71-1.21.73-1.83Zm14.14 3.86h-4.43v-1.27h1.37v-3.63c0-.85-.16-1.45-.5-1.82a1.68 1.68 0 0 0-1.31-.52c-.71 0-1.29.23-1.7.69a2.52 2.52 0 0 0-.67 1.6v3.66h1.38v1.26H56.1v-1.26h1.38v-5.8h-1.42V8.47h3.12V9.9c.6-1.06 1.57-1.6 2.92-1.6.83 0 1.54.26 2.12.77.57.5.85 1.28.85 2.34v4.19h1.38v1.24h-.05Z">
+                        </path>
+                        <path class="logo__cursor" d="M67.71 21.98H83V24H67.71v-2.02Z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div id="navigation_popup" class="navigation_popup">
+                <div class="navigation__menu">
+                    <nav class="menu">
+                        <div class="menu__tab" data-selection="html">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                type="button" slot="button" aria-expanded="false" aria-controls="uid_6pne2pgny8e">
+                                <span class="menu__tab-label">HTML</span>
+                            </button>
+
+                        </div>
+                        <div class="menu__tab" data-selection="css">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_04azrr1xpf7u">
+
+                                <span class="menu__tab-label">CSS</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="javascript">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_sa4drdfx">
+
+                                <span class="menu__tab-label">JavaScript</span>
+                                <span class="menu__tab-label">JS</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="webapis">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_xesddf4e">
+
+                                <span class="menu__tab-label">Web APIs</span>
+
+                            </button>
+                        </div>
+                        <div class="menu__tab" data-selection="all">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_zigww1scd">
+
+                                <span class="menu__tab-label">All</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="learn">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-orange-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_zopsfd12">
+
+                                <span class="menu__tab-label">Learn</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="tools">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-purple-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_3j7GxxH">
+
+                                <span class="menu__tab-label">Tools</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="about">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-green-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_567dopBD">
+
+                                <span class="menu__tab-label">About</span>
+                            </button>
+
+
+                        </div>
+                        <div class="menu__tab" data-selection="blog">
+                            <button class="menu__tab-button" style="--menu__tab-button-color: var(--color-blue-20)"
+                                slot="button" type="button" aria-expanded="false" aria-controls="uid_6783zhx">
+
+                                <span class="menu__tab-label">Blog</span>
+                            </button>
+
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="navigation_search">
+                    <button type="button" class="mdn_search_button" title="search the site">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="m21 21-4.34-4.34"></path>
+                            <circle cx="11" cy="11" r="8"></circle>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mdn_user_menu">
+                    <a href="#" class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="m10 17 5-5-5-5m5 5H3m12-9h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumbs-bar">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs_link">
+                    <span>MDN</span>
+                </a>
+            </div>
+            <mdn-theme></mdn-theme>
+            <!-- <div class="color-theme">
+                <button type="button" class="color-theme__button">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
+                        </svg>
+                    </span>
+                    <span>Theme</span>
+                </button>
+            </div> -->
+            <mdn-swifter></mdn-swifter>
+            <!-- <div class="laungh-swifter">
+                <button type="button" class="language-swifter__button">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="m5 8 6 6m-7 0 6-6 2-3M2 5h12M7 2h1m14 20-5-10-5 10m2-4h6" />
+                        </svg>
+                    </span>
+                    <span>
+                        Русский
+                    </span>
+                </button>
+            </div> -->
+        </div>
+    </header>
+    <div class="page-layout__main">
+        <div class="homepage-header">
+            <div class="homepage-header__center">
+                <div class="homepage-header__copy">
+                    <section>
+                        <h1>Resources for Developers, <br> by Dokf294</h1>
+                        <p>Documenting
+                            <a href="/ru/docs/Web/CSS" data-glean-id="homepage_hero: css">CSS</a>,
+                            <a href="/ru/docs/Web/HTM" data-glean-id="homepage_hero: html">HTML</a>, and
+                            <a href="/ru/docs/Web/JavaScript" data-glean-id="homepage_hero: js">JavaScript</a>, since
+                            2005.
+                        </p>
+                    </section>
+                </div>
+                <div class="homepage-header__search">
+                    <div class="homepage-header__search-custom">
+                        <button class="homepage-header-button__search">
+                            <span>Search</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="homepage-header__mandala">
+                    <div class="homepage-header-canvas__mandala">
+                        <svg viewBox="0 0 675 675" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"
+                            class="mandala">
+                            <title>Mandala</title>
+                            <defs>
+                                <path d="M337.5,337.5 m-320,0 a320,320 0 1,1 640,0 a320,320 0 1,1 -640,0" id="circle1">
+                                </path>
+                                <path d="M337.5,337.5 m-280,0 a280,280 0 1,1 560,0 a280,280 0 1,1 -560,0" id="circle2">
+                                </path>
+                                <path d="M337.5,337.5 m-240,0 a240,240 0 1,1 480,0 a240,240 0 1,1 -480,0" id="circle3">
+                                </path>
+                                <path d="M337.5,337.5 m-200,0 a200,200 0 1,1 400,0 a200,200 0 1,1 -400,0" id="circle4">
+                                </path>
+                                <path d="M337.5,337.5 m-160,0 a160,160 0 1,1 320,0 a160,160 0 1,1 -320,0" id="circle5">
+                                </path>
+                            </defs>
+                            <text dy="70" textLength="2010">
+                                <textPath textLength="2010" href="#circle1">
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    &nbsp;&nbsp;&nbsp;/
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                    /
+                                    <tspan>/</tspan>
+                                </textPath>
+                            </text>
+                            <text dy="70" textLength="1760">
+                                <textPath textLength="1760" href="#circle2">
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    &nbsp;&nbsp;+
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                    +
+                                    <tspan>+</tspan>
+                                </textPath>
+                            </text>
+                            <text dy="70" textLength="1507">
+                                <textPath textLength="1507" href="#circle3">
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                    <tspan>{</tspan>
+                                    {
+                                    <tspan>{</tspan>
+                                    {&nbsp;
+                                    <tspan>}</tspan>
+                                    }
+                                    <tspan>}</tspan>
+                                    }&nbsp;&nbsp;
+                                </textPath>
+                            </text>
+                            <text dy="70" textLength="1257">
+                                <textPath textLength="1257" href="#circle4">
+                                    &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../
+                                    &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../
+                                    &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../
+                                    &nbsp;&nbsp;&nbsp;../../
+                                </textPath>
+                            </text>
+                            <text dy="70" textLength="1005">
+                                <textPath textLength="1005" href="#circle5">
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                    <tspan>&lt;&gt;</tspan>
+                                    &lt;/&gt;
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homepage-main">
+            <div class="homepage-body">
+                <section>
+                    <h2>Featured articles</h2>
+                    <ul class="featured-articles">
+                        <li>
+                            <article class="featured-articles__article">
+                                <a href="#" class="featured-articles__tag">Wep APIs</a>
+                                <h3 class="featured-articles__title">
+                                    <a href="#">CSS custom Highlight API</a>
+                                </h3>
+                                <p class="featured-articles__summary">
+                                    The CSS Custom Highlight API
+                                    provides a mechanism for styling
+                                    arbitrary text ranges on a document
+                                    by using JavaScript to create the
+                                    ranges, and CSS to style them.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="featured-articles__article">
+                                <a href="#" class="featured-articles__tag">Wep APIs</a>
+                                <h3 class="featured-articles__title">
+                                    <a href="#">Server timing</a>
+                                </h3>
+                                <p class="featured-articles__summary">
+                                    Server-Timing is a part of the Performance API and allows
+                                    servers to communicate metrics about the request-response
+                                    cycle to the user agent. You can collect this information and
+                                    act on server-side metrics in the same way as all the other
+                                    metrics processed with the Performance API.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="featured-articles__article">
+                                <a href="#" class="featured-articles__tag">Javascript</a>
+                                <h3 class="featured-articles__title">
+                                    <a href="#">JavaScript resource management</a>
+                                </h3>
+                                <p class="featured-articles__summary">
+                                    This guide talks about how to do resource management in JavaScript.
+                                    Resource management is not exactly the same as memory management,
+                                    which is a more advanced topic and usually handled automatically
+                                    by JavaScript. Resource management is about managing resources that
+                                    are not automatically cleaned up by JavaScript. Sometimes, it's okay to
+                                    have some unused objects in memory, because they don't interfere with
+                                    application logic, but resource leaks often lead to things not
+                                    working, or a lot of excess memory usage. Therefore, this is
+                                    not an optional feature about optimization, but a core feature
+                                    to write correct programs!
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Latest news</h2>
+                    <ul class="latest-news">
+                        <li>
+                            <article class="latest-news__item">
+                                <a href="#" class="latest-news__source">developer.mozilla.org</a>
+                                <h3 class="latest-news__title">
+                                    <a href="#">Image formats: Pixel data from encoders to decoders</a>
+                                </h3>
+                                <time datetime="2025-08-19" class="latest-news__date">4 mounth later</time>
+                                <p class="latest-news__summary">
+                                    From individual pixels to fully decoded images on your screen, raw pixel data gets
+                                    transformed, compressed, and efficiently delivered. Learn about the techniques and
+                                    optimizations that shrink image information without any perceivable loss in quality.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="latest-news__item">
+                                <a href="#" class="latest-news__source">developer.mozilla.org</a>
+                                <h3 class="latest-news__title">
+                                    <a href="#">Launching MDN's new front end</a>
+                                </h3>
+                                <time datetime="2025-08-19" class="latest-news__date">4 mounth later</time>
+                                <p class="latest-news__summary">
+                                    MDN is getting a facelift 🎉. Discover what's changed, what's improved, and how
+                                    navigating the site just got smoother.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="latest-news__item">
+                                <a href="#" class="latest-news__source">developer.mozilla.org</a>
+                                <h3 class="latest-news__title">
+                                    <a href="#">Image formats: Color models for humans and devices</a>
+                                </h3>
+                                <time datetime="2025-08-19" class="latest-news__date">7 mounth later</time>
+                                <p class="latest-news__summary">
+                                    Images help bring more color and life
+                                    to the web. This post describes how
+                                    images are represented by humans and on
+                                    different devices, with details about
+                                    color spaces and vision theory.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="latest-news__item">
+                                <a href="#" class="latest-news__source">developer.mozilla.org</a>
+                                <h3 class="latest-news__title">
+                                    <a href="#">Default styles for h1 elements are changing</a>
+                                </h3>
+                                <time datetime="2025-08-19" class="latest-news__date">8 mounth later</time>
+                                <p class="latest-news__summary">
+                                    Browsers are starting to roll out changes in default UA styles for
+                                    nested section headings. This post describes the incoming changes,
+                                    how to identify if it's an issue on your websites,
+                                    and hints for conformant and better-structured pages.
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Recent contributions</h2>
+                    <ul class="recent-contributions">
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                        <li class="recent-contributions__item">
+                            <span class="recent-contributions__repo">
+                                <a class="external" href="https://github.com/mdn/translated-content"
+                                    data-glean-id="homepage: contribution_repo 1">mdn/translated-content</a>
+                            </span>
+                            <time datetime="2025-12-09T23:59:18Z" class="recent-contributions__date">1 day later</time>
+                            <div class="recent-contributions__title">
+                                <a class="external" href="#">chore(fr): translation of
+                                    `Web/API/HTMLInputElement/stepUp`</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="homepage-footer">
+            <div class="footer__mdn">
+                <div class="footer__intro">
+                    <a href="https://www.mozilla.org/" class="footer__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="83" height="24" viewBox="0 0 83 24">
+                            <path
+                                d="M9.4 0 2.81 21.17H.12L6.69 0zm2.38 0v21.17H9.4V0h2.4Zm9.27 0-6.56 21.17H11.8L18.36 0zm2.39 0v21.17h-2.4V0zm22.11 16.83h-3.93v-1.27h.87v-3.63c0-.85-.16-1.45-.48-1.82a1.65 1.65 0 0 0-1.3-.52c-.74 0-1.3.25-1.66.78a3 3 0 0 0-.58 1.58v3.59h1.38v1.26h-3.93v-1.26h.87v-3.6c0-.88-.16-1.48-.48-1.83a1.7 1.7 0 0 0-1.29-.52 1.93 1.93 0 0 0-1.65.75 2.85 2.85 0 0 0-.58 1.6v3.62h1.59v1.27h-4.64v-1.27h1.37V9.75h-1.4V8.46h3.08v1.47c.28-.48.62-.87 1.08-1.2a3 3 0 0 1 1.68-.45c.67 0 1.22.16 1.73.48.5.32.85.8 1.03 1.47.25-.57.62-1.03 1.13-1.4.5-.37 1.1-.55 1.81-.55.8 0 1.5.25 2.05.75.55.51.85 1.3.85 2.35v4.18h1.4zm9.77 0H52.3v-1.66c-.27.51-.66.95-1.13 1.29-.56.4-1.23.59-1.9.55-1.11 0-2-.37-2.67-1.12a4.4 4.4 0 0 1-1-3.06c0-1.15.3-2.2.93-3.15.6-.94 1.58-1.43 2.94-1.43s2.25.5 2.83 1.5V5.22h-2V3.93h3.63v11.63h1.38v1.27Zm-3.06-3.86v-1.02a2.28 2.28 0 0 0-.73-1.67 2.4 2.4 0 0 0-1.66-.65 2.18 2.18 0 0 0-1.88.9 3.63 3.63 0 0 0-.65 2.2c0 .95.23 1.68.7 2.19.45.5 1.03.76 1.7.76.73 0 1.33-.3 1.79-.88.48-.6.71-1.21.73-1.83m14.14 3.86h-4.43v-1.27h1.37v-3.63c0-.85-.16-1.45-.5-1.82a1.68 1.68 0 0 0-1.31-.52c-.71 0-1.29.23-1.7.69a2.52 2.52 0 0 0-.67 1.6v3.66h1.38v1.26H56.1v-1.26h1.38v-5.8h-1.42V8.47h3.12V9.9c.6-1.06 1.57-1.6 2.92-1.6.83 0 1.54.26 2.12.77.57.5.85 1.28.85 2.34v4.19h1.38v1.24h-.05Zm1.31 5.15H83V24H67.71z">
+                            </path>
+                        </svg>
+                    </a>
+                    <p>
+                        Your blueprint for a better internet.
+                    </p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://github.com/mdn/" target="_blank" rel="noopener" aria-label="MDN on GitHub"
+                            data-icon="github"></a>
+                    </li>
+                    <li>
+                        <a href="https://bsky.app/profile/developer.mozilla.org" target="_blank" rel="noopener"
+                            aria-label="MDN on Bluesky" data-icon="bluesky"></a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/mozdevnet" target="_blank" rel="noopener" aria-label="MDN on X"
+                            data-icon="x"></a>
+                    </li>
+                    <li>
+                        <a href="https://mastodon.social/@mdn" target="_blank" rel="noopener"
+                            aria-label="MDN on Mastodon" data-icon="mastodon"></a>
+                    </li>
+                    <li>
+                        <a href="/en-US/blog/rss.xml" target="_blank" rel="noopener" aria-label="MDN blog RSS feed"
+                            data-icon="rss"></a>
+                    </li>
+                </ul>
+                <dl class="footer__links">
+                    <dt>MDN</dt>
+                    <dd>
+                        <ul>
+
+                            <li>
+                                <a href="/en-US/about" class="" target="" rel="">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/blog/" class="" target="" rel="">
+                                    Blog
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.mozilla.org/en-US/careers/listings/" class="external"
+                                    target="_blank" rel="noopener">
+                                    Mozilla careers
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/advertising" class="" target="" rel="">
+                                    Advertise with us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/plus" class="" target="" rel="">
+                                    MDN Plus
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://support.mozilla.org/products/mdn-plus" class="external" target="_blank"
+                                    rel="noopener">
+                                    Product help
+                                </a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="footer__links">
+                    <dt>Contribute</dt>
+                    <dd>
+                        <ul>
+
+                            <li>
+                                <a href="/en-US/community" class="" target="" rel="">
+                                    MDN Community
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/MDN/Community" class="" target="" rel="">
+                                    Community resources
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/MDN/Writing_guidelines" class="" target="" rel="">
+                                    Writing guidelines
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/discord" class="external" target="_blank" rel="noopener">
+                                    MDN Discord
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/mdn" class="external" target="_blank" rel="noopener">
+                                    MDN on GitHub
+                                </a>
+                            </li>
+
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="footer__links">
+                    <dt>Developers</dt>
+                    <dd>
+                        <ul>
+
+                            <li>
+                                <a href="/en-US/docs/Web" class="" target="" rel="">
+                                    Web technologies
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/Learn_web_development" class="" target="" rel="">
+                                    Learn web development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/MDN/Guides" class="" target="" rel="">
+                                    Guides
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/MDN/Tutorials" class="" target="" rel="">
+                                    Tutorials
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/en-US/docs/Glossary" class="" target="" rel="">
+                                    Glossary
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://hacks.mozilla.org/" class="external" target="_blank" rel="noopener">
+                                    Hacks blog
+                                </a>
+                            </li>
+
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer__mozilla">
+                <a href="https://www.mozilla.org/" class="footer__logo" aria-label="Mozilla logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="30" viewBox="0 0 256 60">
+                        <path
+                            d="m13.32 22.1 5.1 24.3h2.1l5.1-24.3H39.3v37.34h-7.26V28.46h-2.1l-6.96 30.98h-7.02L9.02 28.46h-2.1v31H-.35V22.1h13.66Zm45.12 8.74c8.73 0 13.8 5.15 13.8 14.57S67.14 60 58.44 60c-8.73 0-13.8-5.17-13.8-14.59 0-9.43 5.07-14.57 13.8-14.57m0 23.34c4.1 0 6.16-2.1 6.16-6.73v-4.12c0-4.62-2.06-6.73-6.16-6.73s-6.15 2.1-6.15 6.73v4.12c0 4.63 2.05 6.73 6.15 6.73m17.68-.14 14.82-17.26H76.32v-5.41h23.31v5.4L84.84 54.05h15.03v5.4H76.13v-5.41Zm28.07-22.67h10.7v28.07h-7.25V36.77h-3.48v-5.4zm3.44-9.27h7.26v5.4h-7.25v-5.4Zm12.62 0h10.72v37.34h-7.24V27.5h-3.48zm16.08 0h10.7v37.34h-7.25V27.5h-3.48v-5.4zm27.8 8.74c4.24 0 7.08 2.05 7.87 5.63h2.1v-5.1h8.88v5.4h-3.47v17.28h3.47v5.4h-4.25c-3 0-4.63-1.63-4.63-4.62v-.48H172c-.78 3.58-3.63 5.63-7.88 5.63-6.68 0-11.4-5.59-11.4-14.58 0-9 4.72-14.55 11.4-14.55m2.2 23.34c4.1 0 5.93-2.1 5.93-6.73v-4.12c0-4.62-1.82-6.73-5.94-6.73-3.99 0-5.92 2.1-5.92 6.73v4.13c0 4.62 1.92 6.72 5.93 6.72m46.28 5.27h-7.26V0h7.26zm6.3-28.41h30.8v-2.1l-20.4-7.32v-5.88l20.4-7.33v-2.1h-24.27V0h30.79v12l-16.62 5.63v2.11l16.61 5.64v12H218.9zm0-24.73h6.5v6.52h-6.5z">
+                        </path>
+                    </svg>
+                </a>
+                <ul>
+                    <li>
+                        <a class="external" href="https://www.mozilla.org/privacy/websites/">Website Privacy Notice</a>
+                    </li>
+                    <li>
+                        <a class="external"
+                            href="https://www.mozilla.org/en-US/privacy/websites/data-preferences/">Telemetry
+                            Settings</a>
+                    </li>
+                    <li>
+                        <a class="external" href="https://www.mozilla.org/about/legal/terms/mozilla">Legal</a>
+                    </li>
+                    <li>
+                        <a class="external"
+                            href="https://www.mozilla.org/about/governance/policies/participation/">Community
+                            Participation Guidelines</a>
+                    </li>
+                </ul>
+                <p>
+                    Visit <a href="https://www.mozilla.org/">Mozilla Corporation’s</a> not-for-profit parent, the <a
+                        href="https://foundation.mozilla.org/">Mozilla Foundation</a>.<br>
+                    Portions of this content are ©1998-2025 by individual mozilla.org contributors. Content available
+                    under <a href="/docs/MDN/Writing_guidelines/Attrib_copyright_license">a Creative Commons
+                        license</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

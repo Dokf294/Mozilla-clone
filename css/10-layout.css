@@ -1,0 +1,9 @@
+.page-layout {
+    display: grid;
+    padding-top: var(--header-pad);
+    background-color: var(--color-black);
+    color: var(--color-white);
+} 
+.page-layout__main {
+    background-color: var(--color-main-layout-dark-20);
+}
