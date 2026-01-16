@@ -11,8 +11,8 @@
     margin-left: .25em;
     vertical-align: text-top;
     mask-size: cover;
-    -webkit-mask-image: url(../assets/golink.svg);
-    mask-image: url(../assets/golink.svg);
+    -webkit-mask-image: url(svg/golink.svg);
+    mask-image: url(svg/golink.svg);
 }
 .external:hover{
     text-decoration: underline;

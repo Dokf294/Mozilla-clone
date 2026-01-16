@@ -112,7 +112,7 @@ class Theme extends OpenChecked {
       content: "";
       display: block; 
       background-color: currentColor;
-      mask-image: url('../assets/theme/systemDefault.svg');
+      mask-image: url('theme/systemDefault.svg');
       height: 1.35rem;
       width: 1.30rem;
       mask-size: cover;
@@ -122,7 +122,7 @@ class Theme extends OpenChecked {
       content: "";
       display: block; 
       background-color: currentColor;
-      mask-image: url('../assets/theme/light.svg');
+      mask-image: url('theme/light.svg');
       height: 1.35rem;
       width: 1.30rem;
       mask-size: cover;
@@ -133,7 +133,7 @@ class Theme extends OpenChecked {
       content: "";
       display: block; 
       background-color: currentColor;
-      mask-image: url('../assets/theme/dark.svg');
+      mask-image: url('theme/dark.svg');
       height: 1.35rem;
       width: 1.30rem;
       mask-size: cover;

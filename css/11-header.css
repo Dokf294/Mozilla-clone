@@ -192,8 +192,8 @@
 .menu__tab-button::after {
     content: "";
     display: inline-block;
-    -webkit-mask-image: url(../assets/arrow.svg);
-    mask-image: url(../assets/arrow.svg);
+    -webkit-mask-image: url(svg/arrow.svg);
+    mask-image: url(svg/arrow.svg);
 }
 
 .menu__tab-button::after {
@@ -211,8 +211,8 @@ div[data-selection="blog"] button span{
 div[data-selection="learn"] .menu__tab-button::before {
     content: "";
     display: inline-block;
-    -webkit-mask-image: url(../assets/head.svg);
-    mask-image: url(../assets/head.svg);
+    -webkit-mask-image: url(svg/head.svg);
+    mask-image: url(svg/head.svg);
 }
 div[data-selection="learn"] .menu__tab-button::before {
     background-color: currentColor;
@@ -223,8 +223,8 @@ div[data-selection="learn"] .menu__tab-button::before {
 div[data-selection="tools"] .menu__tab-button::before {
     content: "";
     display: inline-block;
-    -webkit-mask-image: url(../assets/key.svg);
-    mask-image: url(../assets/key.svg);
+    -webkit-mask-image: url(svg/key.svg);
+    mask-image: url(svg/key.svg);
 }
 div[data-selection="tools"] .menu__tab-button::before {
     background-color: currentColor;

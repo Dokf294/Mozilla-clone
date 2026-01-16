@@ -61,8 +61,8 @@
     content: ""; 
     position: relative;
     display: inline-block;
-    -webkit-mask-image: url(../assets/search.svg);
-    mask-image: url(../assets/search.svg);
+    -webkit-mask-image: url(svg/search.svg);
+    mask-image: url(svg/search.svg);
     mask-size: contain;
     mask-repeat: no-repeat;
     width: calc(var(--icon-header-height) * 1.2); 

@@ -82,24 +82,24 @@
     transition: transform .175s ease-in;
 }
 .footer__socials a[data-icon="github"]::before {
-    -webkit-mask-image: url(../assets/socials/github.svg);
-    mask-image: url(../assets/socials/github.svg);
+    -webkit-mask-image: url(socials/github.svg);
+    mask-image: url(socials/github.svg);
 }
 .footer__socials a[data-icon="bluesky"]::before {
-    -webkit-mask-image: url(../assets/socials/bsky.svg);
-    mask-image: url(../assets/socials/bsky.svg);
+    -webkit-mask-image: url(socials/bsky.svg);
+    mask-image: url(socials/bsky.svg);
 }
 .footer__socials a[data-icon="x"]::before {
-    -webkit-mask-image: url(../assets/socials/twitter.svg);
-    mask-image: url(../assets/socials/twitter.svg);
+    -webkit-mask-image: url(socials/twitter.svg);
+    mask-image: url(socials/twitter.svg);
 }
 .footer__socials a[data-icon="mastodon"]::before {
-    -webkit-mask-image: url(../assets/socials/mastadon.svg);
-    mask-image: url(../assets/socials/mastadon.svg);
+    -webkit-mask-image: url(socials/mastadon.svg);
+    mask-image: url(socials/mastadon.svg);
 }
 .footer__socials a[data-icon="rss"]::before {
-    -webkit-mask-image: url(../assets/socials/blog.svg);
-    mask-image: url(../assets/socials/blog.svg);
+    -webkit-mask-image: url(socials/blog.svg);
+    mask-image: url(socials/blog.svg);
 }
 .footer__socials a:hover::before {
     transform: scale(1.05);
