@@ -25,3 +25,4 @@
 6. **Right-click index.html → "Open with Live Server"**
 
 ## 👉DEMO VIEW SITE
+![demo](inc/mozzila-cloneDemo.gif)
