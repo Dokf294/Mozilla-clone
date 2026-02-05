@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isInsideCustom = parentTags.some(el => el.tagName.includes('-'));
 
         if (!isInsideCustom) {
-            link.href = "../html/thanks.html";
+            link.href = "js/thanks.html";
 
             link.addEventListener('click', (e) => {
                 e.preventDefault();
